@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.app{
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-wrapper{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-top: 4rem;
+  gap:2rem;
+}
+
+/* Button Filters */
+
+.button-wrapper > button{
+  height: 2rem;
+  padding: 0 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  /* margin: 0 1rem;*/
+  /* padding: 5px; */
+}
+
+.button-wrapper > button.active{
+  background-color: black;
+  color: white;
+}
+
+.image-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.image-container > .image-card{
+  border-radius: 5px;
+  height: 15rem;
+  color: white;
+  position: relative;
+}
+
+.image-card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-card h2{
+  position:absolute;
+  bottom: 0;
+  left: 1rem;
+  font-size: 1rem;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  /* color: black; */
+}
